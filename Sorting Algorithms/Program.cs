@@ -6,6 +6,7 @@
         {
             selectionsort();
             bubblesort();
+            Mergesort();
         }
 
         public static void selectionsort()
@@ -31,6 +32,20 @@
             BubbleSort.bubbleSort(arr, n);
             Console.WriteLine("Bubble sorted - Sorted Array:");
             BubbleSort.printArray(arr, n);
+            Console.WriteLine("...................................................................");
+        }
+
+        public static void Mergesort()
+        {
+
+            int[] arr = { 12, 11, 13, 5, 6, 7 };
+            Console.WriteLine("Given array is:");
+            Merge.printArray(arr);
+
+            Merge.mergeSort(arr, 0, arr.Length - 1);
+
+            Console.WriteLine("\nMerge -Sorted array is:");
+            Merge.printArray(arr);
         }
     }
 }
